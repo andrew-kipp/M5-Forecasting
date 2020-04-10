@@ -1,0 +1,32 @@
+Captain's Log - Star Date: 2020-04-10 1:57AM
+
+Apparently there was a M4 competition (last year?) and this is a link for the winning model: 
+https://www.kaggle.com/c/m5-forecasting-accuracy/discussion/133551
+
+Kaggle discussion about the large gaps of 0 sales: https://www.kaggle.com/c/m5-forecasting-accuracy/discussion/138085
+This is about how to handle the large gaps of zeros. A few possible explanations are given, but that data would normally come from the client. The main thing we need to focus on is being able to determine which extended periods of zeros are due to seasonal sales or due to lack of stock, etc.
+
+From https://www.kaggle.com/c/m5-forecasting-accuracy/discussion/141469
+This guys provides a code for making dynamic time series plots (scrolling plots) - this looks pretty awesome
+
+From https://www.kaggle.com/c/m5-forecasting-accuracy/discussion/133463
+Apparently this guys does a TON of time series analysis
+
+Pretty good walk through of some visualizations of the data: https://www.kaggle.com/tpmeli/visual-guide-3-m5-baselines-eda-sarima
+
+Feature engineering notebooks I have no read yet (author seems to be pretty good in other discussions):
+https://www.kaggle.com/kyakovlev/m5-simple-fe
+https://www.kaggle.com/kyakovlev/m5-lags-features
+
+Particular items with indeterminate zero sales
+FOODS_1_011_CA_1_validation - Potential seasonal, but also probably not
+FOODS_1_021_CA_1_validation - Just a nice plot
+FOODS_1_031_CA_1_validation - Probably indeterminate zeros
+HOBBIES_1_008_CA_1_validation - Has what appears to be a legitimate discount
+HOBBIES_1_011_CA_1_validation - Not sure
+HOBBIES_1_021_CA_1_validation - Probably indeterminate zeros, but may be too far back to worry about
+HOBBIES_1_031_CA_1_validation - Pretty consistent, but with a couple spots of zeros
+HOUSEHOLD_1_011_CA_1_validation - Recent problematic stretch of indeterminate zeros
+HOUSEHOLD_1_021_CA_1_validation - Actually looks pretty good
+HOUSEHOLD_1_032_CA_1_validation - Definitely problematic indeterminate zeros
+
